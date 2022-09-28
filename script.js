@@ -32,7 +32,8 @@ const calculatePrice = () => {
     const resultForEach = li.innerHTML.split('$');
     totalPrice += parseFloat(resultForEach[1]);
   });
-tagTotalPrice.innerText = parseFloat(totalPrice);
+const parseVar = totalPrice.toFixed(2);
+tagTotalPrice.innerText = `Total: $ ${parseVar}`;
 };
 
 const cartItemClickListener = (event) => {
@@ -113,7 +114,7 @@ const cleanCart = () => {
     const itens = document.querySelector('.cart__items');
     localStorage.removeItem('cartItems');
     itens.innerHTML = '';
-    totalPrice.innerText = 0;
+    totalPrice.innerText = 'Total: $ 0';
   });
 };
 

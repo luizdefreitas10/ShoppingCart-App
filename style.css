@@ -136,7 +136,7 @@ body {
 }
 
 .cart .cart__items {
-  height: 500px;
+  height: 800px;
   overflow-y: scroll;
 }
 
@@ -146,4 +146,20 @@ body {
   margin: 0 auto;
   border: 2px solid rgb(5, 52, 219);
   background-color: rgb(249, 249, 246);
+}
+
+.cart__item {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.total-price {
+  /* border: 1px solid blue; */
+  margin: 10px;
+  padding: 10px;
+}
+
+.cart__item:hover {
+  background-color: lightcoral;
 }
